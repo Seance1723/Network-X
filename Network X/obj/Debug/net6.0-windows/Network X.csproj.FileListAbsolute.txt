@@ -1,0 +1,17 @@
+C:\Users\RupakBiswas\OneDrive - Thoucentric\Documents\MYPROJ\VS Net\Network X\Network X\bin\Debug\net6.0-windows\Network X.exe
+C:\Users\RupakBiswas\OneDrive - Thoucentric\Documents\MYPROJ\VS Net\Network X\Network X\bin\Debug\net6.0-windows\Network X.deps.json
+C:\Users\RupakBiswas\OneDrive - Thoucentric\Documents\MYPROJ\VS Net\Network X\Network X\bin\Debug\net6.0-windows\Network X.runtimeconfig.json
+C:\Users\RupakBiswas\OneDrive - Thoucentric\Documents\MYPROJ\VS Net\Network X\Network X\bin\Debug\net6.0-windows\Network X.dll
+C:\Users\RupakBiswas\OneDrive - Thoucentric\Documents\MYPROJ\VS Net\Network X\Network X\bin\Debug\net6.0-windows\Network X.pdb
+C:\Users\RupakBiswas\OneDrive - Thoucentric\Documents\MYPROJ\VS Net\Network X\Network X\obj\Debug\net6.0-windows\Network X.csproj.AssemblyReference.cache
+C:\Users\RupakBiswas\OneDrive - Thoucentric\Documents\MYPROJ\VS Net\Network X\Network X\obj\Debug\net6.0-windows\Network X.csproj.GenerateResource.cache
+C:\Users\RupakBiswas\OneDrive - Thoucentric\Documents\MYPROJ\VS Net\Network X\Network X\obj\Debug\net6.0-windows\Network X.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RupakBiswas\OneDrive - Thoucentric\Documents\MYPROJ\VS Net\Network X\Network X\obj\Debug\net6.0-windows\Network X.AssemblyInfoInputs.cache
+C:\Users\RupakBiswas\OneDrive - Thoucentric\Documents\MYPROJ\VS Net\Network X\Network X\obj\Debug\net6.0-windows\Network X.AssemblyInfo.cs
+C:\Users\RupakBiswas\OneDrive - Thoucentric\Documents\MYPROJ\VS Net\Network X\Network X\obj\Debug\net6.0-windows\Network X.csproj.CoreCompileInputs.cache
+C:\Users\RupakBiswas\OneDrive - Thoucentric\Documents\MYPROJ\VS Net\Network X\Network X\obj\Debug\net6.0-windows\Network X.dll
+C:\Users\RupakBiswas\OneDrive - Thoucentric\Documents\MYPROJ\VS Net\Network X\Network X\obj\Debug\net6.0-windows\refint\Network X.dll
+C:\Users\RupakBiswas\OneDrive - Thoucentric\Documents\MYPROJ\VS Net\Network X\Network X\obj\Debug\net6.0-windows\Network X.pdb
+C:\Users\RupakBiswas\OneDrive - Thoucentric\Documents\MYPROJ\VS Net\Network X\Network X\obj\Debug\net6.0-windows\Network X.genruntimeconfig.cache
+C:\Users\RupakBiswas\OneDrive - Thoucentric\Documents\MYPROJ\VS Net\Network X\Network X\obj\Debug\net6.0-windows\ref\Network X.dll
+C:\Users\RupakBiswas\OneDrive - Thoucentric\Documents\MYPROJ\VS Net\Network X\Network X\obj\Debug\net6.0-windows\Network_X.NetworkX.resources
