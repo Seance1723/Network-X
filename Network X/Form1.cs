@@ -1,6 +1,13 @@
-using System.Net.NetworkInformation;
-using System.Net.Sockets;
+using System;
+using System.Diagnostics;
+using System.Net;
+using System.Net.Http;
 using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Net.Http.Headers;
+using System.Net.Sockets;
+using System.Net.NetworkInformation;
 
 namespace Network_X
 {
@@ -169,6 +176,45 @@ namespace Network_X
             catch (Exception ex)
             {
                 MessageBox.Show("Error releasing and renewing IP address: " + ex.Message);
+            }
+        }
+
+        private void checkBandwidth_Click(object sender, EventArgs e)
+        {
+            //URL of file to download
+            string downloadUrl = "http://speedtest.ftp.otenet.gr/files/test100k.db";
+            //URL of file to upload
+            string uploadUrl = "https://file.io/";
+
+            //Check download speed
+            using (HttpClient downloadClient = new HttpClient())
+            {
+                Stopwatch downloadStopwatch = new Stopwatch();
+                downloadStopwatch.Start();
+                byte[] downloadData = await downloadClient.GetByteArrayAsync(downloadUrl);
+                downloadStopwatch.Stop();
+                double downloadBytesPerSecond = downloadData.Length / downloadStopwatch.Elapsed.TotalSeconds;
+                double downloadKiloBytesPerSecond = downloadBytesPerSecond / 1024;
+                double downloadMegaBytesPerSecond = downloadKiloBytesPerSecond / 1024;
+                downloadSpeed.Text = downloadMegaBytesPerSecond.ToString("0.00") + " MB/s";
+            }
+
+            //Check upload speed
+            using (HttpClient uploadClient = new HttpClient())
+            {
+                Stopwatch uploadStopwatch = new Stopwatch();
+                uploadStopwatch.Start();
+                byte[] uploadData = Encoding.ASCII.GetBytes("Test file");
+                using (ByteArrayContent byteContent = new ByteArrayContent(uploadData))
+                {
+                    byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
+                    await uploadClient.PostAsync(uploadUrl, byteContent);
+                }
+                uploadStopwatch.Stop();
+                double uploadBytesPerSecond = uploadData.Length / uploadStopwatch.Elapsed.TotalSeconds;
+                double uploadKiloBytesPerSecond = uploadBytesPerSecond / 1024;
+                double uploadMegaBytesPerSecond = uploadKiloBytesPerSecond / 1024;
+                uploadSpeed.Text = uploadMegaBytesPerSecond.ToString("0.00") + " MB/s";
             }
         }
     }
