@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(networkX));
             this.lblIP = new System.Windows.Forms.Label();
             this.lblGateway = new System.Windows.Forms.Label();
             this.lblDns = new System.Windows.Forms.Label();
@@ -39,6 +41,7 @@
             this.networkStatus = new System.Windows.Forms.Button();
             this.flushDNS = new System.Windows.Forms.Button();
             this.releaseRenewIP = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
             // 
             // lblIP
@@ -97,12 +100,15 @@
             // 
             // checkNIC
             // 
+            this.checkNIC.BackColor = System.Drawing.Color.MediumPurple;
+            this.checkNIC.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.checkNIC.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.checkNIC.Location = new System.Drawing.Point(69, 225);
             this.checkNIC.Name = "checkNIC";
             this.checkNIC.Size = new System.Drawing.Size(194, 55);
             this.checkNIC.TabIndex = 6;
             this.checkNIC.Text = "Check NIC";
-            this.checkNIC.UseVisualStyleBackColor = true;
+            this.checkNIC.UseVisualStyleBackColor = false;
             this.checkNIC.Click += new System.EventHandler(this.checkNIC_Click);
             // 
             // netXResult
@@ -144,10 +150,18 @@
             this.releaseRenewIP.UseVisualStyleBackColor = true;
             this.releaseRenewIP.Click += new System.EventHandler(this.releaseRenewIP_Click);
             // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
             // networkX
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.releaseRenewIP);
             this.Controls.Add(this.flushDNS);
@@ -160,6 +174,8 @@
             this.Controls.Add(this.lblDns);
             this.Controls.Add(this.lblGateway);
             this.Controls.Add(this.lblIP);
+            this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "networkX";
             this.Text = "Network X";
             this.Load += new System.EventHandler(this.networkX_Load);
@@ -181,5 +197,6 @@
         private Button networkStatus;
         private Button flushDNS;
         private Button releaseRenewIP;
+        private ImageList imageList1;
     }
 }

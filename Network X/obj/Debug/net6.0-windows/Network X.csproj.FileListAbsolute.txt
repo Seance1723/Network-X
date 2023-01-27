@@ -15,3 +15,4 @@ C:\Users\RupakBiswas\OneDrive - Thoucentric\Documents\MYPROJ\VS Net\Network X\Ne
 C:\Users\RupakBiswas\OneDrive - Thoucentric\Documents\MYPROJ\VS Net\Network X\Network X\obj\Debug\net6.0-windows\Network X.genruntimeconfig.cache
 C:\Users\RupakBiswas\OneDrive - Thoucentric\Documents\MYPROJ\VS Net\Network X\Network X\obj\Debug\net6.0-windows\ref\Network X.dll
 C:\Users\RupakBiswas\OneDrive - Thoucentric\Documents\MYPROJ\VS Net\Network X\Network X\obj\Debug\net6.0-windows\Network_X.NetworkX.resources
+C:\Users\RupakBiswas\OneDrive - Thoucentric\Documents\MYPROJ\VS Net\Network X\Network X\obj\Debug\net6.0-windows\Network_X.Properties.Resources.resources
